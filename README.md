@@ -15,3 +15,9 @@ En algunos proyectos se usa el plugin `Go Live` asegúrate de tenerlo instalado 
 Configuración del entorno de desarrollo y ejemplos de desarrollo con React Native y React JS.
 
 [Ver sesión 1]()
+
+### Sesión 2 - Configurando entorno de desarrollo (parte 2)
+
+Configuración adicional del entorno. Resolución de problemas y configuración de Expo
+
+[Ver sesión 2]()
