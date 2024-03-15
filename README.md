@@ -23,3 +23,7 @@ Configuración del entorno de desarrollo y ejemplos de desarrollo con React Nati
 Configuración adicional del entorno. Resolución de problemas y configuración de Expo
 
 [Ver sesión 2]()
+
+### Sesión 5 -
+
+https://www.w3schools.com/

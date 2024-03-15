@@ -1,0 +1,25 @@
+/* Selectores CSS
+/* 
+    #id
+    .clase 
+    h1
+    [name] - Que tenga el atributo name
+    [type="radio"] - Que tenga el atributo type con el valor 'radio'
+*/
+body {
+    margin: 0;
+}
+header {
+    text-align: center;
+    background: #c9aaff;
+    padding: 1em 0;
+    border: 3px solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    background-color:#6ddff1;
+    padding: 10px;
+    padding-left: 1.5em;
+    margin-top: 1em;
+    border-bottom: 3px dashed gray;
+}
