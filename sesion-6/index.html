@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Escribe algo" type="text" onClick="mostrarMensaje('El texto del input cambió')" onChange="" />
+    <select onchange="mostrarMensaje('El valor del select cambió')">
+        <option>A</option>
+        <option>B</option>
+    </select>
+
+    <script>
+        function mostrarMensaje(mensaje){
+            alert(mensaje)
+        }
+    </script>
+</body>
+</html>
