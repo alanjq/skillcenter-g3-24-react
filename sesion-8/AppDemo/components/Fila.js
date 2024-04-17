@@ -2,21 +2,23 @@ import { Button } from '@rneui/themed'
 import { StyleSheet } from 'react-native'
 import { View } from 'react-native'
 
-export const Fila = ({ col1, col1Color, col2, col2Color, col3, col3Color, col4 }) => {
+export const ejemplo = [
+    {label: 'A', styles: {
+        color: 'red',
+    }},
+    {label: 'B', styles: 'green'},
+    {label: 'C', styles: 'blue'},
+]
+
+export const Fila = ({ columns }) => {
 
     return <View style={styles.fila}>
-        <View style={styles.columna}>
-            <Button titleStyle={styles.boton} color={col1Color}>{col1}</Button>
-        </View>
-        <View style={styles.columna}>
-            <Button titleStyle={styles.boton} color={col2Color}>{col2}</Button>
-        </View>
-        <View style={styles.columna}>
-            <Button titleStyle={styles.boton} color={col3Color}>{col3}</Button>
-        </View>
-        <View style={styles.columna}>
-            <Button titleStyle={styles.boton} color="warning">{col4}</Button>
-        </View>
+        {
+            columns.map((col, key)=>
+                <View key={key} style={col.styles}>
+                    <Button> {col.label} </Button>
+                </View>)
+        }
     </View>
 }
 

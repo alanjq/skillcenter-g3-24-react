@@ -14,6 +14,27 @@ export default function CalculadoraScreen({ navigation }) {
     navigation.navigate(APP_SCREENS.SALUDO)
   }
 
+  const columns = [
+    {
+      label: '1',
+      styles: {
+        color: 'red',
+      }
+    },
+    {
+      label: '2',
+      styles: {
+        color: 'yellow',
+      }
+    },
+    {
+      label: '3',
+      styles: {
+        color: 'orange',
+      }
+    },
+  ]
+
   return (
     <View style={styles.container}>
 
@@ -22,6 +43,8 @@ export default function CalculadoraScreen({ navigation }) {
           <Input placeholder={result} style={styles.campoTexto} />
         </View>
         <View style={{ flexDirection: 'column', gap: 10 }}>
+          <Fila columns={columns}></Fila>
+
           <Fila col1="7" col2="8" col3="9" col4="x" col2Style="error" />
           <Fila col1="4" col2="5" col3="6" col4="/" />
           <Fila col1="1" col2="2" col3="3" col4="-" />
